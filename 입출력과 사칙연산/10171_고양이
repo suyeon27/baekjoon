@@ -1,0 +1,9 @@
+//2022년 6월 5일 일요일
+//고양이를 출력하시오.
+#include <stdio.h>
+int main() {
+    printf("\\    /\\\n");
+    printf(" )  ( ')\n");
+    printf("(  /  )\n");
+    printf(" \\(__)|");
+}
