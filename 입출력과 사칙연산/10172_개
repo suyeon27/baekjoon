@@ -1,0 +1,10 @@
+//2022년 6월 6일 월요일
+//개를 출력하시오.
+#include <stdio.h>
+int main() {
+    printf("|\\_/|\n");
+    printf("|q p|   /}\n");
+    printf("( 0 )\"\"\"\\\n");
+    printf("|\"^\"`    |\n");
+    printf("||_/=\\\\__|");
+}
