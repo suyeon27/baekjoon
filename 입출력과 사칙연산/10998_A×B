@@ -10,7 +10,6 @@ int main() {
 	printf("%d", A * B);
 }
 
-
 //두 번째 방법
 #pragma warning(disable: 4996)
 #include <stdio.h>
