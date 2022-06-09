@@ -1,2 +1,23 @@
 //2022년 6월 9일 목요일
 //두 정수 A와 B를 입력받은 다음, A×B를 출력하는 프로그램을 작성하시오.
+
+//첫 번째 방법
+#pragma warning(disable: 4996)
+#include <stdio.h>
+int main() {
+	int A, B;
+	scanf("%d %d", &A, &B);
+	printf("%d", A * B);
+}
+
+
+//두 번째 방법
+#pragma warning(disable: 4996)
+#include <stdio.h>
+int main() {
+	int A, B, C;
+	scanf("%d %d", &A, &B);
+	C = A * B;
+	printf("%d", C);
+	return 0;
+}
