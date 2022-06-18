@@ -1,0 +1,21 @@
+#pragma warning(disable: 4996)
+#include <stdio.h>
+int main() {
+	int jumsu;
+	scanf("%d", &jumsu);
+	if (jumsu >= 90 && jumsu <= 100) {
+		printf("A");
+	}
+	else if (jumsu >= 80 && jumsu <= 89) {
+		printf("B");
+	}
+	else if (jumsu >= 70 && jumsu <= 79) {
+		printf("C");
+	}
+	else if (jumsu >= 60 && jumsu <= 69) {
+		printf("D");
+	}
+	else if (jumsu >= 0 && jumsu <= 100) {
+		printf("F");
+	}
+}
