@@ -1,2 +1,17 @@
 //2022년 6월 21일 화요일
 //설정한 알람 시각이 주어졌을 때, 45분 앞서는 시간으로 바꾸는 프로그램을 작성하시오.
+#pragma warning(disable: 4996)
+#include <stdio.h>
+int main() {
+	int hour, minute;
+	scanf("%d\n %d", &hour, &minute);
+	if (minute - 45 < 0) {
+		hour = hour - 1;
+		minute = minute + 15;
+		if (hour < 0)
+			hour = 23;
+		printf("%d %d", hour, minute);
+	}
+	else
+		printf("%d %d", hour, minute - 45);
+}
