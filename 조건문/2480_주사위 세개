@@ -4,3 +4,41 @@
 //같은 눈이 2개만 나오는 경우에는 1,000원+(같은 눈)×100원의 상금을 받게 된다. 
 //모두 다른 눈이 나오는 경우에는 (그 중 가장 큰 눈)×100원의 상금을 받게 된다.  
 
+#pragma warning(disable: 4996)
+#include <stdio.h>
+int main() {
+	int A, B, C, pay;
+	A, B, C, pay = 0;
+	scanf("%d %d %d", &A, &B, &C);
+
+	if (A == B && B == C && A == C) {
+		pay = 10000 + A * 1000;
+		if (A, B, C = 0) {
+			pay = 0;
+		}
+		printf("%d", pay);
+	}
+
+	else if (A != B && B != C && A != C) {
+		if (A > B && A > C)
+			pay = A;
+		else if (B > C && B > A)
+			pay = B;
+		else if (C > A && C > B)
+			pay = C;
+		printf("%d", pay * 100);
+	}
+
+	else if (A == B && B != C && A != C) {
+		pay = 1000 + A * 100;
+		printf("%d", pay);
+	}
+	else if (B == C && B != A && C != A) {
+		pay = 1000 + B * 100;
+		printf("%d", pay);
+	}
+	else if (A == C && A != B && C != B) {
+		pay = 1000 + C * 100;
+		printf("%d", pay);
+	}
+}
