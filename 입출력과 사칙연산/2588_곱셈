@@ -10,3 +10,14 @@
 (6)  181720
 
 //(1)과 (2)위치에 들어갈 세 자리 자연수가 주어질 때 (3), (4), (5), (6)위치에 들어갈 값을 구하는 프로그램을 작성하시오.
+
+#pragma warning(disable: 4996)
+#include <stdio.h>
+int main() {
+	int a, b;
+	scanf("%d\n %d", &a, &b);
+	printf("%d\n", a * (b % 10));
+	printf("%d\n", a * (b / 10 % 10));
+	printf("%d\n", a * (b / 100));
+	printf("%d", a * b);
+}
