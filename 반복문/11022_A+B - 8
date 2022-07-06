@@ -1,2 +1,12 @@
 //2022년 7월 6일 수요일
 //두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오. 첫째 줄에 테스트 케이스의 개수 T가 주어진다.
+#pragma warning(disable: 4996)
+#include <stdio.h>
+int main() {
+	int T, a, b;
+	scanf("%d", &T);
+	for (int i = 1; i <= T; i++) {
+		scanf("%d %d", &a, &b);
+		printf("Case #%d: %d + %d = %d\n", i, a, b, a + b);
+	}
+}
