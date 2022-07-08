@@ -1,2 +1,12 @@
 //2022년 7월 7일 목요일
-//
+//각 테스트케이스마다 A+B를 한 줄에 하나씩 순서대로 출력한다.
+#pragma warning(disable: 4996)
+#include <stdio.h>
+int main() {
+	int T, a, b;
+	scanf("%d", &T);
+	for (int i = 0; i < T; i++) {
+		scanf("%d %d", &a, &b);
+		printf("%d\n", a + b);
+	}
+}
